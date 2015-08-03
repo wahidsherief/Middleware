@@ -1,7 +1,7 @@
 <?php
 
 /**
-* SESSSION class
+* Session Class
 */
 class Session
 {

@@ -8,7 +8,7 @@ require_once 'libs/view.php';
 require_once 'controllers/Controller.php';
 
 /**
- * register Middleware Package
+ * include main middleware class
  */
 require_once '../src/Middleware.php';
 

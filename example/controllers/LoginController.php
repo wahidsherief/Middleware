@@ -12,10 +12,9 @@ class LoginController extends Controller
 		
 		/**
 		 * dbconnection
-		 * @var [type]
 		 */
 		$conn=mysql_connect("localhost","root","") or die("not connected");
-		mysql_select_db("najah_db",$conn) or die("could not find database");
+		mysql_select_db("test_db",$conn) or die("could not find database");
 
 		if (isset($_POST['username']) && isset($_POST['password'] )) 
 		{
@@ -32,14 +31,14 @@ class LoginController extends Controller
 			
 			if($count > 0)
 			{
-				Session::init();
-				Session::set('true', true); 
-				Redirect::to('dashboard');
+				Session::init(); // initiate session using session class
+				Session::set('true', true); // set session true
+				Redirect::to('dashboard'); // redirect to dashboard
 			}
 			
 			else
 			{
-				Redirect::to('login');
+				Redirect::to('login'); // redirect to login page.
 			}
 		}
 	}

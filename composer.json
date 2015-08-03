@@ -1,6 +1,6 @@
 {
     "name": "wahid/middleware",
-    "description": "This package helps you to check the user is a member user or guest user",
+    "description": "This package Helps you to check the user is a member user or guest user",
     "license": "MIT",
     "authors": [
         {

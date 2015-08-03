@@ -1,7 +1,7 @@
 <?php
 
 /**
-* Initialize require controller
+* initialize required classes
 */
 class Init
 {
